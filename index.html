@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Word Counter</h1>
+    </header>
+    <main>
+        <section class="user__input">
+            <label for="user-text" class="user__input-label">Place your text here:</label>
+            <textarea class="user__input-textarea" name="user-text" id="user-text" rows="5" cols="30"></textarea>
+            <button type="submit" class="user__input-submit">Count now</button>
+        </section>
+        <section class="counter__display">
+            <p class="counter__display-words">Total number of words: <span class="counter__display-words--total"></span></p>
+            <p class="counter__display-characters">Total number of characters (no spaces included):  <span class="counter__display-characters--total"></span></p>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
